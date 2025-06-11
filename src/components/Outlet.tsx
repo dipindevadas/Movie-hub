@@ -1,9 +1,9 @@
-import React from "react";
+
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import Home from "../pages/Home";
 import { Routes, Route } from "react-router-dom";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 import MovieDetails from "../pages/MovieDetails";
 import CreateMovie from "../pages/CreateMovie";
 

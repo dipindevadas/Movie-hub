@@ -6,7 +6,7 @@ import Details from "../components/Details";
 
 const MovieDetails = () => {
   const { id } = useParams();
-  const { data, isLoading, isError, error, isFetching } = useQuery({
+  const { data, isLoading, isFetching } = useQuery({
     queryKey: ["movie", id],
     queryFn: () => fetchMovieById(id),
     enabled: !!id,

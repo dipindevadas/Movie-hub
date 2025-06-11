@@ -1,5 +1,3 @@
-// components/TrendingSkeletonCard.tsx
-import React from "react";
 import { Skeleton } from "@mui/material";
 
 const CardSkeliton = () => {

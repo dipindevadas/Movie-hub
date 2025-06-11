@@ -1,7 +1,7 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 import { FiHome, FiHeart, FiTrendingUp, FiCalendar, FiUsers, FiMessageCircle, FiSettings, FiLogOut } from "react-icons/fi";
-import { FaPlay, FaRegHeart } from "react-icons/fa";
+
 import coffee from '../assets/coffee.svg'
 
 const Sidebar = () => {

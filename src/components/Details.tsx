@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaPlay, FaRegHeart } from "react-icons/fa";
 import type { Movies } from "../types/Types";
 import IMDB from '../assets/image 1.png'
-import Trailer from "./Trailer";
-import { FiDelete } from "react-icons/fi";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { deleteMovie as deleteMovieByID, EditMovie } from "../api/api";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
-import {EditOutlined, DeleteOutlined, DirtyLensOutlined} from '@mui/icons-material'
+import {EditOutlined, DeleteOutlined} from '@mui/icons-material'
 import Modal from "./common/Modal";
 import MovieForm from "./MovieForm";
 
@@ -21,7 +19,7 @@ type DetailsProps ={
 
  // Make sure this import points to your actual delete function
 
-const Details = ({data, isFetching}:DetailsProps) => {
+const Details = ({data}:DetailsProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const queryClient = useQueryClient()
   const navigate = useNavigate()

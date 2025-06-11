@@ -37,6 +37,7 @@ export const addMovie = async(movieData:any)=>{
 
 export const deleteMovie = async(id:any)=>{
     const response = await axios.delete(`${BASE_URL}/${id}`)
+    return response
 
 }
 

@@ -1,7 +1,7 @@
 
-import { FaPlay, FaRegHeart } from "react-icons/fa";
+import {  FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+
 
 type CardProps={
    data:{
